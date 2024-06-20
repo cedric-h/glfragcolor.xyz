@@ -1,0 +1,109 @@
+<!-- vim: sw=4 ts=4 expandtab smartindent
+-->
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="utf-8" />
+            <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🖌️</text></svg>">
+            <title>glfragcoord.xyz = 🌈</title>
+            <style>
+document, body {
+    margin: 0px;
+    padding: 0px;
+    overflow-y: scroll;
+    background-color: black;
+}
+
+body {
+    color: white;
+    font-family: monospace;
+}
+
+.splash {
+    display: grid;
+
+    height: 100vh;
+    width: 100%;
+}
+
+a         { color: rgb(30%, 30%, 70%); }
+a:visited { color: rgb(60%, 30%, 60%); }
+a:active  { color: rgb(70%, 30%, 30%); }
+
+.splash > img.background {
+    grid-area: 1 / 1;
+
+    z-index: -1;
+
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    filter: blur(50px);
+}
+
+.splash > img {
+    grid-area: 1 / 1;
+
+    height: 100vh;
+    width: 100%;
+    object-fit: contain;
+}
+
+.splash-text {
+    grid-area: 1 / 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    filter: drop-shadow(0 0 10px);
+    font-size: 8vw;
+    padding: none;
+}
+
+h2 {
+    filter: drop-shadow(0 0 10px rgb(10% 10% 10%));
+    font-size: 4vw;
+    padding: none;
+}
+
+            </style>
+        </head>
+<!--
+        <div style="position: absolute;">
+            <h1> glfragcoord.xyz </h1>
+            <h2> get prints of sick fractals </h2>
+        </div>
+-->
+
+    <body>
+        <div style="width:100%; display:grid;">
+            <div class="splash">
+                <img src="assets/fixed2sf.png" class="background"/>
+                <img src="assets/fixed2sf.png"/>
+                <div class="splash-text">
+                    <h1> glfragcolor.xyz </h1>
+                    <h2> fractal prints for your living room </h2>
+                </div>
+            </div>
+
+            <div class="splash">
+                <img src="assets/gdamndf.png" class="background"/>
+                <div class="splash-text">
+                    <h1> art<span style="font-size:2vw;">, from just  </span> code. </h1>
+                    <img src="assets/code.png"></img>
+                </div>
+            </div>
+
+            <div class="splash">
+                <img src="assets/gdamndf.png" class="background"/>
+                <img src="assets/gdamndf.png"/>
+                <div class="splash-text">
+                    <h1> art by <a href="https://namelesscoding.github.io"> nameless </a> </h1>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
